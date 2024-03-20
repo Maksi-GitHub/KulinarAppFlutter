@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -164,7 +165,7 @@ class _HomePageState extends State<HomePage> {
           Container(
             padding: const EdgeInsets.only(top: 20, left: 20),
             child: Text(
-              'Что вы хотите приготовить?',
+              'Что хотите приготовить?',
               style: GoogleFonts.inter(
                   textStyle: const TextStyle(
                       color: Colors.black,
@@ -173,188 +174,148 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           const SizedBox(height: 5),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
-            child: Row(
-              children: [
-                Stack(
+          Column(
+            children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SizedBox(
-                      height: 100,
-                      width: 120,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
-                        child: Image.asset(
-                          'assets/test_image.jpg',
-                          fit: BoxFit.cover,
-                        ),
+                    Container(
+                      padding: const EdgeInsets.only(right: 10),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 90,
+                            width: 110,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.red
+                            ),
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.all(10),
+                            child: Text('Завтрак'),
+                          )
+                        ],
                       ),
                     ),
                     Container(
-                        margin: const EdgeInsets.only(left: 5, top: 70),
-                        child: Text(
-                          'Завтрак',
-                          style: GoogleFonts.inter(
-                              textStyle: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600)),
-                        ))
-                  ],
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                Stack(
-                  children: [
-                    SizedBox(
-                      height: 100,
-                      width: 120,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
-                        child: Image.asset(
-                          'assets/test_image.jpg',
-                          fit: BoxFit.cover,
-                        ),
+                      padding: const EdgeInsets.only(left: 10, right: 10),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 90,
+                            width: 110,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.red
+                            ),
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.all(10),
+                            child: Text('Завтрак'),
+                          )
+                        ],
                       ),
                     ),
                     Container(
-                        margin: const EdgeInsets.only(left: 5, top: 70),
-                        child: Text(
-                          'Обед',
-                          style: GoogleFonts.inter(
-                              textStyle: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600)),
-                        ))
+                      padding: const EdgeInsets.only(left: 10),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 90,
+                            width: 110,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.red
+                            ),
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.all(10),
+                            child: Text('Завтрак'),
+                          )
+                        ],
+                      ),
+                    )
                   ],
                 ),
-                const SizedBox(
-                  width: 10,
-                ),
-                Stack(
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SizedBox(
-                      height: 100,
-                      width: 120,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
-                        child: Image.asset(
-                          'assets/test_image.jpg',
-                          fit: BoxFit.cover,
-                        ),
+                    Container(
+                      padding: const EdgeInsets.only(right: 10),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 90,
+                            width: 110,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.red
+                            ),
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.all(10),
+                            child: Text('Завтрак'),
+                          )
+                        ],
                       ),
                     ),
                     Container(
-                        margin: const EdgeInsets.only(left: 5, top: 70),
-                        child: Text(
-                          'Ужин',
-                          style: GoogleFonts.inter(
-                              textStyle: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600)),
-                        ))
-                  ],
-                ),
-              ],
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
-            child: Row(
-              children: [
-                Stack(
-                  children: [
-                    SizedBox(
-                      height: 100,
-                      width: 120,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
-                        child: Image.asset(
-                          'assets/test_image.jpg',
-                          fit: BoxFit.cover,
-                        ),
+                      padding: const EdgeInsets.only(left: 10, right: 10),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 90,
+                            width: 110,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.red
+                            ),
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.all(10),
+                            child: Text('Завтрак'),
+                          )
+                        ],
                       ),
                     ),
                     Container(
-                        margin: const EdgeInsets.only(left: 5, top: 70),
-                        child: Text(
-                          'Завтрак',
-                          style: GoogleFonts.inter(
-                              textStyle: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600)),
-                        ))
-                  ],
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                Stack(
-                  children: [
-                    SizedBox(
-                      height: 100,
-                      width: 120,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
-                        child: Image.asset(
-                          'assets/test_image.jpg',
-                          fit: BoxFit.cover,
-                        ),
+                      padding: const EdgeInsets.only(left: 10),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 90,
+                            width: 110,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.red
+                            ),
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.all(10),
+                            child: Text('Завтрак'),
+                          )
+                        ],
                       ),
-                    ),
-                    Container(
-                        margin: const EdgeInsets.only(left: 5, top: 70),
-                        child: Text(
-                          'Обед',
-                          style: GoogleFonts.inter(
-                              textStyle: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600)),
-                        ))
+                    )
                   ],
                 ),
-                const SizedBox(
-                  width: 10,
-                ),
-                Stack(
-                  children: [
-                    SizedBox(
-                      height: 100,
-                      width: 120,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
-                        child: Image.asset(
-                          'assets/test_image.jpg',
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ),
-                    Container(
-                        margin: const EdgeInsets.only(left: 5, top: 70),
-                        child: Text(
-                          'Ужин',
-                          style: GoogleFonts.inter(
-                              textStyle: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600)),
-                        ))
-                  ],
-                ),
-              ],
-            ),
+            ],
           ),
           const SizedBox(
-            height: 10,
+            height: 20,
           ),
-          Container(
-            padding: const EdgeInsets.only(top: 20, left: 20),
-            child: Text(
+          const SizedBox(
+            height: 5,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: Container(
+              height: 100,
+              width: double.infinity,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),
+              color: Colors.red,),
+              child: Text(textAlign: TextAlign.center,
               'Добавить рецепт',
               style: GoogleFonts.inter(
                   textStyle: const TextStyle(
@@ -362,22 +323,6 @@ class _HomePageState extends State<HomePage> {
                       fontSize: 18,
                       fontWeight: FontWeight.w600)),
             ),
-          ),
-          const SizedBox(
-            height: 5,
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: SizedBox(
-              height: 100,
-              width: double.infinity,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Image.asset(
-                  'assets/test_image.jpg',
-                  fit: BoxFit.cover,
-                ),
-              ),
             ),
           ),
           const SizedBox(
@@ -397,50 +342,53 @@ class _HomePageState extends State<HomePage> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: Container(
-              height: 80,
-             child: ListView(
-              scrollDirection: Axis.horizontal,
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.red,
-                  ),
-                    width: 130,
-                  ),
-                  const SizedBox(
-              width: 10,
-            ),
-            Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.red,
-                  ),
-                    width: 130,
-                  ),
-                  const SizedBox(
-              width: 10,
-            ),
-           Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.red,
-                  ),
-                    width: 130,
-                  ),
-                  const SizedBox(
-              width: 10,
-            ),
-            Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.red,
-                  ),
-                    width: 130,
-                  ),
-              ],
-             )
-            ),
+                height: 80,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Container(
+                      width: 130,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.red,
+                      ),
+                      child: const Center(child: Text('Избранное')),
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      width: 130,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.red,
+                      ),
+                      child: const Center(child: Text('Подбор рецепта')),
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      width: 130,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.red,
+                      ),
+                      child: const Center(child: Text('Мои рецепты')),
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      width: 130,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.red,
+                      ),
+                      child: const Center(child: Text('Меню на неделю')),
+                    ),
+                  ],
+                )),
           ),
           const SizedBox(
             height: 20,
