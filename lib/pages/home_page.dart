@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:kulinar/pages/add_recipe_page.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class HomePage extends StatefulWidget {
@@ -176,153 +178,152 @@ class _HomePageState extends State<HomePage> {
           const SizedBox(height: 5),
           Column(
             children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.only(right: 10),
-                      child: Column(
-                        children: [
-                          Container(
-                            height: 90,
-                            width: 110,
-                            decoration: BoxDecoration(
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.only(right: 10),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 90,
+                          width: 110,
+                          decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
-                              color: Colors.red
-                            ),
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.all(10),
-                            child: Text('Завтрак'),
-                          )
-                        ],
-                      ),
+                              color: Colors.red),
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Text('Завтрак'),
+                        )
+                      ],
                     ),
-                    Container(
-                      padding: const EdgeInsets.only(left: 10, right: 10),
-                      child: Column(
-                        children: [
-                          Container(
-                            height: 90,
-                            width: 110,
-                            decoration: BoxDecoration(
+                  ),
+                  Container(
+                    padding: const EdgeInsets.only(left: 10, right: 10),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 90,
+                          width: 110,
+                          decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
-                              color: Colors.red
-                            ),
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.all(10),
-                            child: Text('Завтрак'),
-                          )
-                        ],
-                      ),
+                              color: Colors.red),
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Text('Завтрак'),
+                        )
+                      ],
                     ),
-                    Container(
-                      padding: const EdgeInsets.only(left: 10),
-                      child: Column(
-                        children: [
-                          Container(
-                            height: 90,
-                            width: 110,
-                            decoration: BoxDecoration(
+                  ),
+                  Container(
+                    padding: const EdgeInsets.only(left: 10),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 90,
+                          width: 110,
+                          decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
-                              color: Colors.red
-                            ),
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.all(10),
-                            child: Text('Завтрак'),
-                          )
-                        ],
-                      ),
-                    )
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.only(right: 10),
-                      child: Column(
-                        children: [
-                          Container(
-                            height: 90,
-                            width: 110,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              color: Colors.red
-                            ),
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.all(10),
-                            child: Text('Завтрак'),
-                          )
-                        ],
-                      ),
+                              color: Colors.red),
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Text('Завтрак'),
+                        )
+                      ],
                     ),
-                    Container(
-                      padding: const EdgeInsets.only(left: 10, right: 10),
-                      child: Column(
-                        children: [
-                          Container(
-                            height: 90,
-                            width: 110,
-                            decoration: BoxDecoration(
+                  )
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.only(right: 10),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 90,
+                          width: 110,
+                          decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
-                              color: Colors.red
-                            ),
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.all(10),
-                            child: Text('Завтрак'),
-                          )
-                        ],
-                      ),
+                              color: Colors.red),
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Text('Завтрак'),
+                        )
+                      ],
                     ),
-                    Container(
-                      padding: const EdgeInsets.only(left: 10),
-                      child: Column(
-                        children: [
-                          Container(
-                            height: 90,
-                            width: 110,
-                            decoration: BoxDecoration(
+                  ),
+                  Container(
+                    padding: const EdgeInsets.only(left: 10, right: 10),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 90,
+                          width: 110,
+                          decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
-                              color: Colors.red
-                            ),
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.all(10),
-                            child: Text('Завтрак'),
-                          )
-                        ],
-                      ),
-                    )
-                  ],
-                ),
+                              color: Colors.red),
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Text('Завтрак'),
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.only(left: 10),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 90,
+                          width: 110,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.red),
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Text('Завтрак'),
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ],
           ),
           const SizedBox(
             height: 20,
           ),
-          const SizedBox(
-            height: 5,
-          ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: Container(
-              height: 100,
-              width: double.infinity,
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),
-              color: Colors.red,),
-              child: Text(textAlign: TextAlign.center,
-              'Добавить рецепт',
-              style: GoogleFonts.inter(
-                  textStyle: const TextStyle(
-                      color: Colors.black,
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600)),
-            ),
+            child: InkWell(
+              child: Container(
+                height: 100,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.red,
+                ),
+                child: Text(
+                  textAlign: TextAlign.center,
+                  'Добавить рецепт',
+                  style: GoogleFonts.inter(
+                      textStyle: const TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w600)),
+                ),
+              ),
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const AddRecipePage()));
+              },
             ),
           ),
           const SizedBox(
@@ -341,13 +342,13 @@ class _HomePageState extends State<HomePage> {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: Container(
+            child: SizedBox(
                 height: 80,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
                     Container(
-                      width: 130,
+                      width: 110,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.red,
@@ -358,7 +359,7 @@ class _HomePageState extends State<HomePage> {
                       width: 10,
                     ),
                     Container(
-                      width: 130,
+                      width: 110,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.red,
@@ -369,7 +370,7 @@ class _HomePageState extends State<HomePage> {
                       width: 10,
                     ),
                     Container(
-                      width: 130,
+                      width: 110,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.red,
@@ -380,12 +381,97 @@ class _HomePageState extends State<HomePage> {
                       width: 10,
                     ),
                     Container(
-                      width: 130,
+                      width: 110,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.red,
                       ),
                       child: const Center(child: Text('Меню на неделю')),
+                    ),
+                  ],
+                )),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            padding: const EdgeInsets.only(top: 20, left: 20),
+            child: Text(
+              'Сезонные продукты',
+              style: GoogleFonts.inter(
+                  textStyle: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600)),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: SizedBox(
+                height: 200,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                          height: 150,
+                          width: 200,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: Colors.red,
+                          ),
+                        ),
+                        const Text('Продукт'),
+                      ],
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          height: 150,
+                          width: 200,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: Colors.red,
+                          ),
+                        ),
+                        const Text('Продукт'),
+                      ],
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          height: 150,
+                          width: 200,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: Colors.red,
+                          ),
+                        ),
+                        const Text('Продукт'),
+                      ],
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          height: 150,
+                          width: 200,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: Colors.red,
+                          ),
+                        ),
+                        const Text('Продукт'),
+                      ],
                     ),
                   ],
                 )),
