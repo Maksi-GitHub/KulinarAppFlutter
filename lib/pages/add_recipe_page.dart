@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:kulinar/widgets/categories_widget.dart';
 
 class AddRecipePage extends StatefulWidget {
   const AddRecipePage({super.key});
@@ -58,13 +59,34 @@ class _AddRecipePageState extends State<AddRecipePage> {
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: TextField(
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
+                  fillColor: Colors.black.withOpacity(0.2),
+                  filled: true,
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20),
+                    borderSide: const BorderSide(
+                      color: Colors.red,
+                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20),
+                    borderSide: const BorderSide(
+                      color: Colors.green,
+                    ),
                   ),
                   hintText: 'Описание',
                 ),
                 maxLines: null,
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                 backgroundColor: Colors.red, fixedSize: Size(MediaQuery.of(context).size.width, 30)
+                ),
+                onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const CategoriesWidget()));
+              }, child: const Text('Выберите ингредиенты', style: TextStyle(color: Colors.white),)),
             )
           ],
         ),
