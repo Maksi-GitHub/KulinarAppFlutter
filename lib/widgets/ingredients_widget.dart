@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class CategoriesWidget extends StatefulWidget {
-  const CategoriesWidget({super.key});
+class IngredientsWidget extends StatefulWidget {
+  const IngredientsWidget({super.key});
 
   @override
-  State<CategoriesWidget> createState() => _CategoriesWidgetState();
+  State<IngredientsWidget> createState() => _IngredientsWidgetState();
 }
 
-class _CategoriesWidgetState extends State<CategoriesWidget> {
+class _IngredientsWidgetState extends State<IngredientsWidget> {
   List<Map> categories = [
     {"name": "Swimming", "isChecked": false},
     {"name": "Cycling", "isChecked": false},
@@ -20,33 +20,11 @@ class _CategoriesWidgetState extends State<CategoriesWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Column(
-          children: [
-            Text('Dynamic Checkboxes'),
-            Text(
-              '@CodeWithFlexz',
-              style: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 13,
-                  fontWeight: FontWeight.w300),
-            ),
-          ],
-        ),
-        centerTitle: true,
-      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(20),
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            const Text(
-              "Please Choose Your Favorite Category:",
-              style: TextStyle(fontSize: 16),
-            ),
-            const SizedBox(height: 10),
-            const Divider(),
-            const SizedBox(height: 10),
             Column(
                 children: categories.map((favorite) {
               return CheckboxListTile(
