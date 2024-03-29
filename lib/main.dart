@@ -9,7 +9,6 @@ void main() async{
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
 );
-
 }
 
 class MyApp extends StatelessWidget {
@@ -17,8 +16,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        cardColor: Colors.red, // Цвет курсора
+        textSelectionTheme: const TextSelectionThemeData(
+          selectionColor: Colors.red, // Цвет выделения текста
+        ),
+      ),
       home: HomePage(),
     );
   }
